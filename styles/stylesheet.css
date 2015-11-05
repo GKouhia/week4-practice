@@ -1,21 +1,79 @@
 * {box-sizing: border-box; }
-* { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif}
+* {font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;}
+header h1 { 
+    max-width: 75%; 
+    margin: auto;
+    color: rgb(136,102,179);
+    text-align: center;
+    }
+nav { clear: both;}
+  a {
+    text-decoration: none;
+    background-color: rgb(136,102,179);
+    }
+li {
+      width: 14%;
+      border: 1px;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: rgb(136,102,179);
+      float: left; 
+      list-style: none;
+          }
+article { 
+  float: right; 
+  width: 80%; 
+  padding: 2rem;
+  background-color: rgb(225,228,233);}
+  
+img { width:60%; 
+      height:60%;
+        }
+  p {text-align: center;
+    width: 70%;
+    font-size: 12px;
+    padding: none;
+    clear: both;
+    }
+aside { float: left;
+    width: 20%;
+    background-color: rgb(190,179,213);  
+    padding: 1px; 
+    text-align: center;
+    clear: both;
+    }
+footer {
+    width: 100%
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+  
+}
+/*--comment out unsure about footer declaration
+footer {
+    max-width: 75%;
+    align-content: center;
+    color: rgb(136,102,179);
+    text-align: center;
+}--*/
+/*--it would be good to use changes in link appearance to indicate the link's state of use
+/* unvisited link */
+a:link {
+    color: white;
+}
 
-header h1 { max-width: 75%; 
-            margin: auto}
+/* visited link */
+a:visited {
+    color: green;
+}
 
-nav { clear: both; }
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
 
-header li { float: left; 
-            list-style-type: none}
-
-article { clear: both;
-          float: left; 
-          width: 80%; 
-          padding: 1rem;
-          background-color: aqua;}
-
-aside {float: right;
-          width: 20%;
-          background-color: pink;}
-footer { clear: both; }
+/* selected link */
+a:active {
+    color: white;
+}
